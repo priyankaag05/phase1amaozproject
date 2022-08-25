@@ -31,7 +31,7 @@ public class SamsungSearch {
 		Srchbtn.click();
 
 		// List of All samsung product on 1st page
-		List<WebElement> Product=driver.findElements(By.xpath("//div[@data-component-type='s-search-result']//h2/a"));
+		List<WebElement> Product=driver.findElements(By.xpath("//div[@class='a-section']//span[starts-with(text(),'Samsung ')]"));
 
 		//List of All samsung product price on 1st page
 		List<WebElement> Price=driver.findElements(By.xpath("//div[@data-component-type='s-search-result']//span[@class='a-price']"));
